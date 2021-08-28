@@ -11,6 +11,11 @@
   <!-- partial -->
 
   <link href="/assets/lib/typicons.font/typicons.css" rel="stylesheet">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
 </head>
 
 <body>
@@ -129,98 +134,96 @@
       </div>
     </section>
 
-    <section>
-      <section class="py-5 mb-5">
-        <h6 class="text-primary mb-4">Pricing</h6>
+    <section class="py-5 mb-5" id="pricingId">
+      <h6 class="text-primary mb-4">Pricing</h6>
 
-        <!-- Nav tabs -->
-        <ul class="nav nav-pills pricing-nav-pills-outline mb-5" id="pricingTabOne" role="tablist">
-          <li class="nav-item">
-            <a class="nav-link active show" id="pricing-one-mnthly-tab" data-toggle="tab" href="#pricing-one-mnthly" role="tab" aria-controls="pricing-one-mnthly" aria-selected="true">Monthly Plan</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" id="pricing-one-yearly-tab" data-toggle="tab" href="#pricing-one-yearly" role="tab" aria-controls="pricing-one-yearly" aria-selected="false">Annual Plan</a>
-          </li>
-        </ul>
+      <!-- Nav tabs -->
+      <ul class="nav nav-pills pricing-nav-pills-outline mb-5" id="pricingTabOne" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active show" id="pricing-one-mnthly-tab" data-toggle="tab" href="#pricing-one-mnthly" role="tab" aria-controls="pricing-one-mnthly" aria-selected="true">Monthly Plan</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="pricing-one-yearly-tab" data-toggle="tab" href="#pricing-one-yearly" role="tab" aria-controls="pricing-one-yearly" aria-selected="false">Annual Plan</a>
+        </li>
+      </ul>
 
-        <h3 class="text-center font-weight-bold mb-40px">Choose your pricing policy</h3>
+      <h3 class="text-center font-weight-bold mb-40px">Choose your pricing policy</h3>
 
-        <!-- Tab panes -->
-        <div class="tab-content">
-          <div class="tab-pane active show" id="pricing-one-mnthly" role="tabpanel" aria-labelledby="pricing-one-mnthly-tab">
-            <div class="row">
-              <div class="col-md-6 col-lg-4 offset-lg-2">
-                <div class="card border-0 card-shadow">
-                  <div class="card-body p-lg-5 p-md-4">
-                    <h3 class="text-center">Basic Account</h3>
-                    <h6 class="text-center mb-5">For Small teams</h6>
-                    <ul class="list-checked mb-40px">
-                      <li>Drag &amp; Drop Builder</li>
-                      <li>1,000's of Templates</li>
-                      <li>Blog Support Tools</li>
-                      <li>ECommerce Store</li>
-                    </ul>
-                    <div class="d-flex align-items-center justify-content-center mb-30px"><span class="h3 mb-0 mr-1 font-weight-bold">$0</span>/monthly</div>
-                    <div class="text-center"><button class="btn btn-primary">Start Free Trial</button></div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-4">
-                <div class="card border-0 card-shadow">
-                  <div class="card-body p-lg-5 p-md-4">
-                    <h3 class="text-center">Pro Master</h3>
-                    <h6 class="text-center mb-5">For Small teams</h6>
-                    <ul class="list-checked mb-40px">
-                      <li>Drag &amp; Drop Builder</li>
-                      <li>1,000's of Templates</li>
-                      <li>Blog Support Tools</li>
-                      <li>ECommerce Store</li>
-                    </ul>
-                    <div class="d-flex align-items-center justify-content-center mb-30px"><span class="h3 mb-0 mr-1 font-weight-bold">$230</span>/monthly</div>
-                    <div class="text-center"><button class="btn btn-primary">Subscribe Now</button></div>
-                  </div>
+      <!-- Tab panes -->
+      <div class="tab-content">
+        <div class="tab-pane active show" id="pricing-one-mnthly" role="tabpanel" aria-labelledby="pricing-one-mnthly-tab">
+          <div class="row">
+            <div class="col-md-6 col-lg-4 offset-lg-2">
+              <div class="card border-0 card-shadow">
+                <div class="card-body p-lg-5 p-md-4">
+                  <h3 class="text-center">Basic Account</h3>
+                  <h6 class="text-center mb-5">For Small teams</h6>
+                  <ul class="list-checked mb-40px">
+                    <li>Drag &amp; Drop Builder</li>
+                    <li>1,000's of Templates</li>
+                    <li>Blog Support Tools</li>
+                    <li>ECommerce Store</li>
+                  </ul>
+                  <div class="d-flex align-items-center justify-content-center mb-30px"><span class="h3 mb-0 mr-1 font-weight-bold">$0</span>/monthly</div>
+                  <div class="text-center"><button class="btn btn-primary">Start Free Trial</button></div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="tab-pane" id="pricing-one-yearly" role="tabpanel" aria-labelledby="pricing-one-yearly-tab">
-            <div class="row">
-              <div class="col-md-6 col-lg-4 offset-lg-2">
-                <div class="card border-0 card-shadow">
-                  <div class="card-body p-lg-5 p-md-4">
-                    <h3 class="text-center">Basic Account</h3>
-                    <h6 class="text-center mb-5">For Small teams</h6>
-                    <ul class="list-checked mb-40px">
-                      <li>Drag &amp; Drop Builder</li>
-                      <li>1,000's of Templates</li>
-                      <li>Blog Support Tools</li>
-                      <li>ECommerce Store</li>
-                    </ul>
-                    <div class="d-flex align-items-center justify-content-center mb-30px"><span class="h3 mb-0 mr-1 font-weight-bold">$0</span>/yearly</div>
-                    <div class="text-center"><button class="btn btn-primary">Start Free Trial</button></div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-4">
-                <div class="card border-0 card-shadow">
-                  <div class="card-body p-lg-5 p-md-4">
-                    <h3 class="text-center">Pro Master</h3>
-                    <h6 class="text-center mb-5">For Small teams</h6>
-                    <ul class="list-checked mb-40px">
-                      <li>Drag &amp; Drop Builder</li>
-                      <li>1,000's of Templates</li>
-                      <li>Blog Support Tools</li>
-                      <li>ECommerce Store</li>
-                    </ul>
-                    <div class="d-flex align-items-center justify-content-center mb-30px"><span class="h3 mb-0 mr-1 font-weight-bold">$2300</span>/yearly</div>
-                    <div class="text-center"><button class="btn btn-primary">Subscribe Now</button></div>
-                  </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="card border-0 card-shadow">
+                <div class="card-body p-lg-5 p-md-4">
+                  <h3 class="text-center">Pro Master</h3>
+                  <h6 class="text-center mb-5">For Small teams</h6>
+                  <ul class="list-checked mb-40px">
+                    <li>Drag &amp; Drop Builder</li>
+                    <li>1,000's of Templates</li>
+                    <li>Blog Support Tools</li>
+                    <li>ECommerce Store</li>
+                  </ul>
+                  <div class="d-flex align-items-center justify-content-center mb-30px"><span class="h3 mb-0 mr-1 font-weight-bold">$230</span>/monthly</div>
+                  <div class="text-center"><button class="btn btn-primary">Subscribe Now</button></div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
+        <div class="tab-pane" id="pricing-one-yearly" role="tabpanel" aria-labelledby="pricing-one-yearly-tab">
+          <div class="row">
+            <div class="col-md-6 col-lg-4 offset-lg-2">
+              <div class="card border-0 card-shadow">
+                <div class="card-body p-lg-5 p-md-4">
+                  <h3 class="text-center">Basic Account</h3>
+                  <h6 class="text-center mb-5">For Small teams</h6>
+                  <ul class="list-checked mb-40px">
+                    <li>Drag &amp; Drop Builder</li>
+                    <li>1,000's of Templates</li>
+                    <li>Blog Support Tools</li>
+                    <li>ECommerce Store</li>
+                  </ul>
+                  <div class="d-flex align-items-center justify-content-center mb-30px"><span class="h3 mb-0 mr-1 font-weight-bold">$0</span>/yearly</div>
+                  <div class="text-center"><button class="btn btn-primary">Start Free Trial</button></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="card border-0 card-shadow">
+                <div class="card-body p-lg-5 p-md-4">
+                  <h3 class="text-center">Pro Master</h3>
+                  <h6 class="text-center mb-5">For Small teams</h6>
+                  <ul class="list-checked mb-40px">
+                    <li>Drag &amp; Drop Builder</li>
+                    <li>1,000's of Templates</li>
+                    <li>Blog Support Tools</li>
+                    <li>ECommerce Store</li>
+                  </ul>
+                  <div class="d-flex align-items-center justify-content-center mb-30px"><span class="h3 mb-0 mr-1 font-weight-bold">$2300</span>/yearly</div>
+                  <div class="text-center"><button class="btn btn-primary">Subscribe Now</button></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="lead-landing-section mb-5">
@@ -269,7 +272,7 @@
 
 
     <section class="lead-landing-section mb-5">
-      <div class="container">
+      <div class="container" id="faqId">
         <h6 class="text-primary font-weight-bold">Help</h6>
         <div id="landing-sass-testimonial-carousel" class="landing-sass-testimonial-carousel carousel slide" data-ride="carousel">
           <div class="d-flex mb-4">
@@ -328,14 +331,14 @@
         <div class="row">
           <div class="col-sm">
             <nav class="nav footer-nav nav-vertical my-4 my-md-0">
-              <a href="#!" class="nav-link">About</a>
-              <a href="#!" class="nav-link">Pricing</a>
+              <a href="#aboutId" class="nav-link">About</a>
+              <a href="#pricingId" class="nav-link">Pricing</a>
               <a href="#!" class="nav-link">Health</a>
             </nav>
           </div>
           <div class="col-sm">
             <nav class="nav footer-nav nav-vertical my-4 my-md-0">
-              <a href="#!" class="nav-link">FAQ</a>
+              <a href="#faqId" class="nav-link">FAQ</a>
               <a href="#!" class="nav-link">Support</a>
             </nav>
           </div>
@@ -353,10 +356,10 @@
         <p class="footer-text text-gray order-sm-first">©2020. All rights reserved.</p>
       </div>
       <a href="#!" class="nav-link">Cookies Preferences</a>
-      <a href="#!" class="nav-link">Cookies</a>
-      <a href="#!" class="nav-link">Privacy</a>
-      <a href="#!" class="nav-link">Terms of Service</a>
-      <a href="#!" class="nav-link">Impressum</a>
+      <a href="/cookies" class="nav-link">Cookies</a>
+      <a href="/privacy" class="nav-link">Privacy</a>
+      <a href="/terms" class="nav-link">Terms of Service</a>
+      <a href="/imprint" class="nav-link">Imprint</a>
     </div>
   </footer>
 </div>

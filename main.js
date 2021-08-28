@@ -1,4 +1,4 @@
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 3300;
 
 const express = require('express');
 
@@ -47,12 +47,20 @@ app.get('/', function (req, res) {
     res.sendFile(process.cwd() + '/views/index.html');
 });
 
-app.get('/privacy-policy', function (req, res) {
+app.get('/privacy', function (req, res) {
     res.sendFile(process.cwd() + '/views/privacy-policy.html');
 });
 
-app.get('/terms-of-use', function (req, res) {
+app.get('/terms', function (req, res) {
     res.sendFile(process.cwd() + '/views/terms-of-use.html');
+});
+
+app.get('/imprint', function (req, res) {
+    res.sendFile(process.cwd() + '/views/imprint.html');
+});
+
+app.get('/cookies', function (req, res) {
+    res.sendFile(process.cwd() + '/views/cookies.html');
 });
 
 app.use(bugsnagMiddleware.errorHandler);
