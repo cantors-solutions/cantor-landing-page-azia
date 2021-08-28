@@ -72,5 +72,8 @@
     "select2": "^4.0.6-rc.1",
     "spectrum-colorpicker": "^1.8.0",
     "typicons.font": "^2.0.9"
+  },
+  "engines": {
+    "node": ">=0.15.8"
   }
 }
