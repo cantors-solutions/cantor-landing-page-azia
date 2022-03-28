@@ -18,14 +18,7 @@
     "url": "https://github.com/Savic/cantor-landing-page/issues"
   },
   "homepage": "https://github.com/Savic/cantor-landing-page#readme",
-  "devDependencies": {
-    "browser-sync": "^2.26.3",
-    "gulp": "^4.0.2",
-    "gulp-clean-css": "^4.3.0",
-    "gulp-npm-dist": "^1.0.3",
-    "gulp-rename": "^2.0.0",
-    "gulp-sass": "^4.0.2"
-  },
+  "devDependencies": {},
   "dependencies": {
     "@bugsnag/js": "^7.9.2",
     "@bugsnag/plugin-express": "^7.9.2",
