@@ -46,6 +46,7 @@
     tw_sale_amount: 0,
     tw_order_quantity: 0
   });</script>
+
   <noscript>
     <img height="1" width="1" style="display:none;" alt=""
          src="https://analytics.twitter.com/i/adsct?txn_id=o7tnd&p_id=Twitter&tw_sale_amount=0&tw_order_quantity=0"/>
@@ -55,6 +56,12 @@
   <!-- End Twitter single-event website tag code -->
 
   <script>
+    const trackEvent = function (_event) {
+      if(window.dataLayer) {
+        window.dataLayer.push(_event);
+      }
+    }
+
     const pageIsLoaded = function () {
       const TOKEN_STORAGE_KEY = "__cantor_token";
 
@@ -87,23 +94,29 @@
       <div class="collapse navbar-collapse" id="leadUIMainNav">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
           <li class="nav-item text-white">
-            <a class="nav-link text-white" href="https://discord.com/invite/3hyM5M7Qbt" target="_blank" rel="noopener noreferrer" content="noindex, nofollow">Discord</a>
+            <a class="nav-link text-white" href="https://discord.com/invite/3hyM5M7Qbt" target="_blank" rel="noopener noreferrer" content="noindex, nofollow"
+               onclick="trackEvent({event: 'topNavLinkDiscoredClicked'})">Discord</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="/#pricing">Pricing</a>
+            <a class="nav-link text-white" href="/#pricing"
+               onclick="trackEvent({event: 'topNavLinkPricingClicked'})">Pricing</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="mailto:office@cantor.ai">Support</a>
+            <a class="nav-link text-white" href="mailto:office@cantor.ai"
+               onclick="trackEvent({event: 'topNavLinkSupportClicked'})">Support</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="/#faq">FAQ</a>
+            <a class="nav-link text-white" href="/#faq"
+               onclick="trackEvent({event: 'topNavLinkFaqClicked'})">FAQ</a>
           </li>
         </ul>
         <div class="form-inline">
-          <a class="nav-link text-white" href="https://app.cantor.ai/signin">Log in</a>
+          <a class="nav-link text-white" href="https://app.cantor.ai/signin"
+             onclick="trackEvent({event: 'topNavGoToDashboardLClicked'})">Go to Dashboard</a>
         </div>
         <div class="form-inline">
-          <a class="btn btn-outline-light text-white" href="https://app.cantor.ai/signup"><b>Sign up</b></a>
+          <a class="btn btn-outline-light text-white" href="https://app.cantor.ai/signup"
+             onclick="trackEvent({event: 'topNavLinkSignUpClicked'})"><b>Sign up</b></a>
         </div>
       </div>
     </div>
@@ -128,7 +141,8 @@
 
             <p class="text-muted mb-20px pt-2 tx-14">Fuel your crypto investment decisions with quantitative on-chain data and market indicators.</p>
 
-            <a href="https://app.cantor.ai/signup" class="btn btn-primary btn-rounded btn-block mt-3" style="font-size: 1.2rem; max-width: 374px; background-color: #0D3E62">
+            <a href="https://app.cantor.ai/signup" class="btn btn-primary btn-rounded btn-block mt-3" style="font-size: 1.2rem; max-width: 374px; background-color: #0D3E62"
+               onclick="trackEvent({event: 'topHeaderSectionSignUpClicked'})">
               <b>Sign up</b>
             </a>
           </div>
@@ -155,7 +169,8 @@
             <li>Analysing <b class="tx-primary">adoption</b> and <b class="tx-primary">reliability</b> of a crypto-asset</li>
             <li>It's <b class="tx-primary">free</b></li>
           </ul>
-          <a href="https://app.cantor.ai/signup" class="btn btn-primary" style="background-color: #0D3E62">
+          <a href="https://app.cantor.ai/signup" class="btn btn-primary" style="background-color: #0D3E62"
+             onclick="trackEvent({event: 'minimizeYourRiskSectionSignUpClicked'})">
             <b>Sign up</b>
           </a>
         </div>
@@ -252,7 +267,8 @@
                     <li>E-Mail Support</li>
                   </ul>
                   <div class="d-flex align-items-center justify-content-center mb-30px"><span class="h3 mb-0 mr-1 font-weight-bold" style="color: #0D3E62;">For free</span></div>
-                  <div class="text-center"><a href="https://app.cantor.ai/signup" class="btn btn-success" style="background-color: #0D3E62"><b>Sign up</b></a></div>
+                  <div class="text-center"><a href="https://app.cantor.ai/signup" class="btn btn-success" style="background-color: #0D3E62"
+                                              onclick="trackEvent({event: 'pricingSectionSignUpClicked'})"><b>Sign up</b></a></div>
                 </div>
               </div>
             </div>
@@ -293,7 +309,7 @@
               <div class="card">
                 <div class="card-header" id="headingOne">
                   <h5 class="mb-0">
-                    <a data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne" class="collapsed"> How is our analysis done? </a>
+                    <a onclick="trackEvent({event: 'faqOne'})" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne" class="collapsed"> How is our analysis done? </a>
                   </h5>
                 </div>
                 <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion-1" style="">
@@ -358,7 +374,7 @@
               <div class="card">
                 <div class="card-header" id="headingTwo">
                   <h5 class="mb-0">
-                    <a data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" class="collapsed"> Who benefits from Cantor? </a>
+                    <a onclick="trackEvent({event: 'faqTwo'})" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" class="collapsed"> Who benefits from Cantor? </a>
                   </h5>
                 </div>
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion-1" style="">
@@ -404,7 +420,7 @@
               <div class="card">
                 <div class="card-header" id="headingThree">
                   <h5 class="mb-0">
-                    <a data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"> Are cantor services <br/> free of charge? </a>
+                    <a onclick="trackEvent({event: 'faqThree'})" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"> Are cantor services <br/> free of charge? </a>
                   </h5>
                 </div>
                 <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion-1">
@@ -428,7 +444,8 @@
           <div class="col-sm-3 mb-20px px-3 mb-2">
             <div class="card h-100 d-flex align-items-center justify-content-center p-3 rounded-0">
               <div class="card-body">
-                <a href="https://discord.com/invite/3hyM5M7Qbt" target="_blank" rel="noopener noreferrer" content="noindex, nofollow">
+                <a href="https://discord.com/invite/3hyM5M7Qbt" target="_blank" rel="noopener noreferrer" content="noindex, nofollow"
+                   onclick="trackEvent({event: 'discordSectionTwitterClicked'})">
                   <img src="/assets/img/discordlogo.png" alt="client" class="img-fluid" height="100px">
                 </a>
               </div>
@@ -438,7 +455,8 @@
           <div class="col-sm-3 mb-20px px-3 mb-2">
             <div class="card h-100 d-flex align-items-center justify-content-center p-3 rounded-0">
               <div class="card-body">
-                <a href="https://twitter.com/cantor_analysis?s=11&t=k_irw4zZy7wrNXURHJnFSg" target="_blank" rel="noopener noreferrer" content="noindex, nofollow">
+                <a href="https://twitter.com/cantor_analysis?s=11&t=k_irw4zZy7wrNXURHJnFSg" target="_blank" rel="noopener noreferrer" content="noindex, nofollow"
+                   onclick="trackEvent({event: 'communitySectionTwitterClicked'})">
                   <img src="/assets/img/twitter.png" alt="client" class="img-fluid" height="120px">
                 </a>
               </div>
